@@ -36,12 +36,12 @@ const Hero = ({ data, storeUrl }) => {
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
         <div className="max-w-5xl mx-auto">
           {/* Subtitle */}
-          <p className="text-[#00d4ff] font-medium tracking-[0.3em] uppercase mb-6 text-sm md:text-base animate-pulse-glow">
+          <p style={{ color: '#00d4ff', fontWeight: '500', letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: '2rem', fontSize: 'clamp(0.75rem, 2vw, 1rem)' }} className="animate-pulse-glow">
             {data.subtitle}
           </p>
 
           {/* Main Title */}
-          <h1 className="racing-title text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white mb-8">
+          <h1 className="racing-title" style={{ fontSize: 'clamp(3rem, 12vw, 9rem)', color: 'white', marginBottom: '2rem', marginTop: '1.5rem' }}>
             {data.titleLine1}
             <br />
             <span className="gradient-text">{data.titleLine2}</span>
