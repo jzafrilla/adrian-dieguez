@@ -1,0 +1,159 @@
+{
+  "site": {
+    "title": "Adrián Diéguez",
+    "logo": "/logo.png",
+    "storeUrl": "https://tienda.adriandieguez.com",
+    "email": "info@adriandieguez.com",
+    "location": "Valencia, España"
+  },
+
+  "hero": {
+    "subtitle": "Fotografía Deportiva & Mecánica de Competición",
+    "titleLine1": "ADRIÁN",
+    "titleLine2": "DIÉGUEZ",
+    "description": "Capturando la velocidad, la técnica y la pasión del mundo del motor. Desde el taller hasta la línea de meta.",
+    "ctaPrimary": "VER PORTFOLIO",
+    "ctaSecondary": "IR A LA TIENDA",
+    "images": [
+      "/images/WEB-176.jpg",
+      "/images/MajoAspar19OCT-54.jpg",
+      "/images/Motoescuela-2025-11-09-379.jpg",
+      "/images/Albaida 2025-09-21_-92.jpg",
+      "/images/WEB-175.jpg"
+    ]
+  },
+
+  "about": {
+    "label": "Sobre mí",
+    "titleLine1": "PASIÓN POR LAS",
+    "titleLine2": "DOS RUEDAS",
+    "image": "/images/Web-103.jpg",
+    "floatingCard": {
+      "value": "+500",
+      "label": "Eventos cubiertos"
+    },
+    "paragraphs": [
+      "Soy <strong>Adrián Diéguez</strong>, mecánico profesional de motos y fotógrafo deportivo. Mi vida gira en torno al asfalto, el rugir de los motores y la adrenalina de la competición.",
+      "Con años de experiencia en el paddock, conozco cada detalle de las máquinas que fotografío. Esta doble perspectiva me permite capturar no solo la velocidad, sino también la técnica, el esfuerzo y la pasión que hay detrás de cada piloto.",
+      "Desde supermotard hasta velocidad en circuito, pasando por karts y eventos de motor, mi objetivo es inmortalizar esos momentos que definen la esencia del motorsport."
+    ],
+    "stats": [
+      { "value": "10+", "label": "Años de experiencia", "color": "red" },
+      { "value": "50+", "label": "Circuitos visitados", "color": "blue" },
+      { "value": "∞", "label": "Pasión", "color": "white" }
+    ],
+    "services": [
+      "Fotografía de eventos",
+      "Mecánica de competición",
+      "Cobertura de circuitos",
+      "Reportajes personalizados"
+    ]
+  },
+
+  "portfolio": {
+    "label": "Mi Trabajo",
+    "title": "PORTFOLIO",
+    "description": "Una selección de mis mejores capturas en circuitos y eventos de motor. Cada imagen cuenta una historia de velocidad y pasión.",
+    "ctaText": "VER MÁS EN LA TIENDA",
+    "categories": [
+      { "id": "all", "name": "Todos" },
+      { "id": "velocidad", "name": "Velocidad" },
+      { "id": "supermotard", "name": "Supermotard" },
+      { "id": "circuito", "name": "Circuito" },
+      { "id": "escuela", "name": "Escuela" }
+    ],
+    "images": [
+      { "src": "/images/WEB-176.jpg", "category": "velocidad", "title": "Velocidad Pura" },
+      { "src": "/images/MajoAspar19OCT-22.jpg", "category": "circuito", "title": "En el Circuito" },
+      { "src": "/images/MajoAspar19OCT-54.jpg", "category": "supermotard", "title": "Supermotard Action" },
+      { "src": "/images/Motoescuela-2025-11-09-18.jpg", "category": "escuela", "title": "Moto Escuela" },
+      { "src": "/images/Motoescuela-2025-11-09-379.jpg", "category": "escuela", "title": "Aprendiendo a Volar" },
+      { "src": "/images/Motoescuela-2025-11-09-445.jpg", "category": "escuela", "title": "Nuevos Pilotos" },
+      { "src": "/images/Web-119.jpg", "category": "velocidad", "title": "A Toda Máquina" },
+      { "src": "/images/WEB-167.jpg", "category": "circuito", "title": "Curva Perfecta" },
+      { "src": "/images/WEB-175.jpg", "category": "velocidad", "title": "Sin Límites" },
+      { "src": "/images/Web-81.jpg", "category": "supermotard", "title": "Derrapando" },
+      { "src": "/images/Web-85.jpg", "category": "circuito", "title": "Concentración" },
+      { "src": "/images/Fondo majo-1.jpg", "category": "retrato", "title": "El Piloto" }
+    ]
+  },
+
+  "circuits": {
+    "label": "Donde trabajo",
+    "title": "CIRCUITOS",
+    "description": "Presente en los mejores circuitos y eventos del motorsport español, capturando cada momento de acción.",
+    "items": [
+      {
+        "name": "Circuito de Albaida",
+        "location": "Valencia, España",
+        "image": "/images/Albaida 2025-09-21_-92.jpg",
+        "description": "Uno de los circuitos más técnicos del supermotard español.",
+        "link": "https://tienda.adriandieguez.com/albaida"
+      },
+      {
+        "name": "Circuit Ricardo Tormo",
+        "location": "Cheste, Valencia",
+        "image": "/images/MajoAspar19OCT-54.jpg",
+        "description": "Sede del Gran Premio de la Comunitat Valenciana de MotoGP.",
+        "link": "https://tienda.adriandieguez.com/ricardo-tormo"
+      },
+      {
+        "name": "Circuito de Velocidad",
+        "location": "España",
+        "image": "/images/WEB-175.jpg",
+        "description": "Alta velocidad y curvas de vértigo para los más valientes.",
+        "link": "https://tienda.adriandieguez.com/velocidad"
+      },
+      {
+        "name": "Motoescuela Pro",
+        "location": "Múltiples ubicaciones",
+        "image": "/images/Motoescuela-2025-11-09-379.jpg",
+        "description": "Formando a los pilotos del mañana con pasión y profesionalidad.",
+        "link": "https://tienda.adriandieguez.com/motoescuela"
+      }
+    ],
+    "stats": [
+      { "value": "25+", "label": "Circuitos cubiertos" },
+      { "value": "100+", "label": "Eventos al año" },
+      { "value": "1000+", "label": "Pilotos fotografiados" },
+      { "value": "24/7", "label": "Pasión por el motor" }
+    ]
+  },
+
+  "cta": {
+    "badge": "TIENDA ONLINE DISPONIBLE",
+    "titleLine1": "LLEVA LA",
+    "titleLine2": "ADRENALINA",
+    "titleLine3": "CONTIGO",
+    "description": "Descubre mis fotografías exclusivas de eventos de motor. Prints de alta calidad, merchandising y mucho más. La velocidad capturada para tu colección.",
+    "ctaPrimary": "VISITAR TIENDA",
+    "ctaSecondary": "CONTACTAR",
+    "backgroundImage": "/images/WEB-167.jpg",
+    "features": [
+      "Envío a toda España",
+      "Impresión premium",
+      "Fotografías exclusivas"
+    ]
+  },
+
+  "footer": {
+    "description": "Fotógrafo deportivo y mecánico profesional de motos. Capturando la esencia del motorsport español desde hace más de una década.",
+    "navigation": [
+      { "name": "Inicio", "href": "#inicio" },
+      { "name": "Portfolio", "href": "#portfolio" },
+      { "name": "Servicios", "href": "#servicios" },
+      { "name": "Circuitos", "href": "#circuitos" },
+      { "name": "Contacto", "href": "#contacto" }
+    ],
+    "social": {
+      "instagram": "https://instagram.com/adriandieguez",
+      "facebook": "https://facebook.com/adriandieguez",
+      "youtube": "https://youtube.com/@adriandieguez"
+    },
+    "contact": {
+      "email": "info@adriandieguez.com",
+      "location": "Valencia, España",
+      "availability": "Disponible para eventos"
+    }
+  }
+}
