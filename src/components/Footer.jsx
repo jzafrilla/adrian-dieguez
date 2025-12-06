@@ -3,20 +3,20 @@ const Footer = ({ data, site }) => {
 
   return (
     <footer id="contacto" style={{ backgroundColor: '#0a0a0a', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-      <div style={{ maxWidth: '80rem', margin: '0 auto', padding: '0 2rem' }}>
+      <div style={{ maxWidth: '80rem', margin: '0 auto', padding: '0 1.5rem' }}>
         {/* Main Footer Content */}
-        <div style={{ padding: '5rem 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))', gap: '3rem' }}>
+        <div style={{ padding: '4rem 0', display: 'flex', flexDirection: 'column', gap: '3rem' }}>
           {/* Brand */}
-          <div style={{ gridColumn: 'span 2' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-              <img src={site.logo} alt={site.title} style={{ height: '3.5rem', width: 'auto' }} />
-              <span className="racing-title" style={{ fontSize: '1.75rem', color: 'white' }}>{site.title.toUpperCase()}</span>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
+              <img src={site.logo} alt={site.title} style={{ height: '3rem', width: 'auto' }} />
+              <span className="racing-title" style={{ fontSize: '1.5rem', color: 'white' }}>{site.title.toUpperCase()}</span>
             </div>
-            <p style={{ color: '#9ca3af', maxWidth: '28rem', marginBottom: '2rem', fontSize: '1.0625rem', lineHeight: '1.9' }}>
+            <p style={{ color: '#9ca3af', maxWidth: '28rem', margin: '0 auto 1.5rem', fontSize: '1rem', lineHeight: '1.8' }}>
               {data.description}
             </p>
             {/* Social Links */}
-            <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
               {data.social.instagram && (
                 <a
                   href={data.social.instagram}
@@ -59,76 +59,69 @@ const Footer = ({ data, site }) => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="section-title" style={{ color: 'white', fontSize: '1.25rem', marginBottom: '1.5rem' }}>NAVEGACIÓN</h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              {data.navigation.map((link) => (
-                <li key={link.name} style={{ marginBottom: '1rem' }}>
+          {/* Links and Contact Row */}
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '3rem', textAlign: 'center' }}>
+            {/* Quick Links */}
+            <div>
+              <h4 className="section-title" style={{ color: 'white', fontSize: '1.125rem', marginBottom: '1.25rem' }}>NAVEGACIÓN</h4>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                {data.navigation.map((link) => (
+                  <li key={link.name} style={{ marginBottom: '0.75rem' }}>
+                    <a
+                      href={link.href}
+                      style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '1rem', lineHeight: '1.8' }}
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+                <li style={{ marginBottom: '0.75rem' }}>
                   <a
-                    href={link.href}
-                    style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '1.0625rem', lineHeight: '1.8', transition: 'color 0.3s' }}
+                    href={site.storeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: '#e63946', textDecoration: 'none', fontWeight: '500', fontSize: '1rem' }}
                   >
-                    {link.name}
+                    Tienda Online →
                   </a>
                 </li>
-              ))}
-              <li style={{ marginBottom: '1rem' }}>
-                <a
-                  href={site.storeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: '#e63946', textDecoration: 'none', fontWeight: '500', fontSize: '1.0625rem' }}
-                >
-                  Tienda Online →
-                </a>
-              </li>
-            </ul>
-          </div>
+              </ul>
+            </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="section-title" style={{ color: 'white', fontSize: '1.25rem', marginBottom: '1.5rem' }}>CONTACTO</h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <svg style={{ width: '1.25rem', height: '1.25rem', color: '#e63946', marginTop: '0.125rem', flexShrink: 0 }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <a href={`mailto:${data.contact.email}`} style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '1.0625rem', lineHeight: '1.8' }}>
-                  {data.contact.email}
-                </a>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <svg style={{ width: '1.25rem', height: '1.25rem', color: '#00d4ff', marginTop: '0.125rem', flexShrink: 0 }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span style={{ color: '#9ca3af', fontSize: '1.0625rem', lineHeight: '1.8' }}>
-                  {data.contact.location}
-                </span>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <svg style={{ width: '1.25rem', height: '1.25rem', color: '#e63946', marginTop: '0.125rem', flexShrink: 0 }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span style={{ color: '#9ca3af', fontSize: '1.0625rem', lineHeight: '1.8' }}>
-                  {data.contact.availability}
-                </span>
-              </li>
-            </ul>
+            {/* Contact */}
+            <div>
+              <h4 className="section-title" style={{ color: 'white', fontSize: '1.125rem', marginBottom: '1.25rem' }}>CONTACTO</h4>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={{ marginBottom: '0.75rem' }}>
+                  <a href={`mailto:${data.contact.email}`} style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '1rem', lineHeight: '1.8' }}>
+                    {data.contact.email}
+                  </a>
+                </li>
+                <li style={{ marginBottom: '0.75rem' }}>
+                  <span style={{ color: '#9ca3af', fontSize: '1rem', lineHeight: '1.8' }}>
+                    {data.contact.location}
+                  </span>
+                </li>
+                <li style={{ marginBottom: '0.75rem' }}>
+                  <span style={{ color: '#00d4ff', fontSize: '1rem', lineHeight: '1.8' }}>
+                    {data.contact.availability}
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ padding: '1.5rem 0', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-          <p style={{ color: '#6b7280', fontSize: '0.9375rem' }}>
+        <div style={{ padding: '1.5rem 0', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center' }}>
+          <p style={{ color: '#6b7280', fontSize: '0.875rem', marginBottom: '0.5rem' }}>
             © {currentYear} {site.title}. Todos los derechos reservados.
           </p>
-          <div style={{ display: 'flex', gap: '2rem' }}>
-            <a href="#" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.9375rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+            <a href="#" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.875rem' }}>
               Política de Privacidad
             </a>
-            <a href="#" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.9375rem' }}>
+            <a href="#" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.875rem' }}>
               Aviso Legal
             </a>
           </div>
